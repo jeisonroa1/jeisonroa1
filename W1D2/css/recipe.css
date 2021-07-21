@@ -26,7 +26,6 @@ blockquote{
     font-weight: normal;
     text-decoration: underline;
     text-underline-position: below;
-    display: initial;
 }
 .comment-div-color{
     background-color: #FFFFA8;
