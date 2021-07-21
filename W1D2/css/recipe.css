@@ -1,5 +1,5 @@
 body{
-    background-color: #FFFFFF;
+    background-image: url("/resources/silverware.jpg");
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, Garamond, serif;
@@ -49,4 +49,8 @@ blockquote{
     border:0;
     width:88px;
     height:31px;
+}
+
+ul li{
+    list-style-image: url("/resources/pie_icon.gif");
 }
