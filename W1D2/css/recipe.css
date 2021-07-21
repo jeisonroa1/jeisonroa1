@@ -22,10 +22,10 @@ blockquote{
     color: #A4A400 ;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
     text-align:left;
-    size: 18pt;
+    resize: 18pt;
     font-weight: normal;
     text-decoration: underline;
-    text-underline-position: below;
+    text-underline-position: auto;
     display: initial;
 }
 .comment-div-color{
@@ -37,14 +37,14 @@ blockquote{
 }
 
 #main-heading{
-    letter-spacing: 0.25em
+    letter-spacing: 0.25em;
     background-color: #F0F0F0;
     color: #A4A400 ;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
     text-decoration: underline;
-    text-underline-position: below;
+    text-underline-position: auto;
     text-align: center;
-    size: 22pt;
+    resize: 22pt;
     font-weight: bold;
 }
 
