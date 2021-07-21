@@ -21,3 +21,9 @@ h2 {
     display: grid;
     align-items: center;
 }
+
+li > a {
+    outline: none;
+    text-decoration: none;
+    color: #2C7EEA;
+}
