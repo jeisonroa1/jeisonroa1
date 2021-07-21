@@ -17,6 +17,7 @@ blockquote{
     font-style: italic;
 }
 .heading{
+    letter-spacing: 0.25em;
     background-color: #F0F0F0;
     color: #A4A400 ;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
@@ -25,6 +26,7 @@ blockquote{
     font-weight: normal;
     text-decoration: underline;
     text-underline-position: below;
+    display: initial;
 }
 .comment-div-color{
     background-color: #FFFFA8;
@@ -35,6 +37,7 @@ blockquote{
 }
 
 #main-heading{
+    letter-spacing: 0.25em
     background-color: #F0F0F0;
     color: #A4A400 ;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
