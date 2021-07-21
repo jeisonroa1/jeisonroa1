@@ -16,3 +16,10 @@ h1 {
 h2 {
 	color: darkblue;
 }
+
+.description {
+    display: flex;
+    padding-left: 30px;
+    display: grid;
+    align-items: center;
+}
