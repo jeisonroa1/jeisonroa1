@@ -22,7 +22,6 @@ blockquote{
     color: #A4A400 ;
     font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
     text-align:left;
-    resize: 18pt;
     font-weight: normal;
     text-decoration: underline;
     text-underline-position: auto;
@@ -44,7 +43,6 @@ blockquote{
     text-decoration: underline;
     text-underline-position: auto;
     text-align: center;
-    resize: 22pt;
     font-weight: bold;
 }
 
