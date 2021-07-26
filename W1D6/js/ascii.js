@@ -44,7 +44,7 @@ window.onload = function () {
     }
 
     function changeAnimationText() {
-        animation = selectAnimation.value;
+        animation = ANIMATIONS[selectAnimation.value];
         txtShowAnimation.value = animation;
         currentAnimationText = txtShowAnimation.value;
     }
@@ -79,7 +79,6 @@ window.onload = function () {
 
     function changeFontSize() {
         txtShowAnimation.style.fontSize = FONTSIZES[selectFont.value] + 'pt';
-        //alert(selectFont.value + 'pt');
     }
 
     var FONTSIZES = [];
