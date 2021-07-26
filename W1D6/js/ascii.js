@@ -24,18 +24,12 @@ window.onload = function () {
 
     selectAnimation = document.getElementById("animation");
     selectAnimation.onchange = changeAnimationText;
-    //selectAnimation.selectedIndex = 0;
 
     selectFont = document.getElementById("fontsize");
     selectFont.onchange = changeFontSize;
-    //selectFont.selectedIndex = 2;
 
     chkSpeed = document.getElementById("turbo");
     chkSpeed.onchange = changeDelay;
-
-    function okayClick() {
-        alert("test");
-    }
 
     function enabdisabControl(state) {
         if (state === 'start') {
