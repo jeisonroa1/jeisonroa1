@@ -1,5 +1,5 @@
 window.onload = function () {
-    "use strict"
+    "use strict";
 
     let txtShowAnimation;
     let btnStart;
@@ -79,7 +79,7 @@ window.onload = function () {
             timer = null;
         }
         indexFrame = 0;
-        txtShowAnimation.value = currentAnimationText
+        txtShowAnimation.value = currentAnimationText;
     }
 
 
