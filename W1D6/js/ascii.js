@@ -44,7 +44,7 @@ window.onload = function () {
     }
 
     function changeAnimationText() {
-        animation = ANIMATIONS[selectAnimation.value];
+        animation = selectAnimation.value;
         txtShowAnimation.value = animation;
         currentAnimationText = txtShowAnimation.value;
     }
