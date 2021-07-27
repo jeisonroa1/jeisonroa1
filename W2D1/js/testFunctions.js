@@ -64,7 +64,7 @@ describe("reverse", function () {
 });
 
 describe("filterLongWords", function () {
-    describe("Filter longer words than 5: [maldita, lisiada, te, besaste, con, mi, nandito] ", function () {
+    describe("Filter longer words than 5: [holanda, colombia, cuba, estadosunidos, con, mi, rusian] ", function () {
         let testArray = ["holanda", "colombia", "cuba", "estadosunidos", "con", "mi", "rusian"];
         let expected = ["holanda", "colombia", "estadosunidos", "rusian"];
         let val = 5;
