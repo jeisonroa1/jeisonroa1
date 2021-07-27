@@ -1,0 +1,16 @@
+.row{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    background-color: #25A0E6; padding: 0.9% 0.2%;
+}
+.header div.title{
+    font-size: 23px;
+}
+.header div.menu ul li{
+    padding: 1% 5%; font-size: 19px; border-left: 1px solid white;
+}
