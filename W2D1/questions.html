@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+//    1.
+
+    elem = document.getElementById("demo");
+
+    x = "1"; //global variable
+    var a = "5"; //variable initialize, not hoisted
+    var b = "10"; //variable initialize, not hoisted
+    //use strict by default
+    var c = function (a, b, c) {
+        document.write(x); 
+        document.write(a); 
+        var f = function (a, b, c) {
+            b = a;
+            document.write(b);
+        }
+        f(a, b, c); 
+
+        document.write(b); 
+        var x = "10";
+    }
+
+    //still Global scope
+    c("8", "9", "10");
+    document.write(b);
+    document.write(x); 
+
+    //Resumed= 1, 8, 8, 9, 10,1
+ //   2.
+
+    /* Global Scope is the window or basically where the variables and functions are declared outside any block/function, it is the biggest scope in javaScript.
+     Local scope refers to the function/block scope, variables and functions defined inside these only work inside of the braces/block */
+
+ //   3.
+        /*
+    (a)No, The bigger scope just have access to the scope that its in, not the ones it has inside
+    (b)Yes, because Scope B its inside scope A
+    (c)No, because Scope C its inside B not otherwise
+    (d)Yes, because Scope C is inside B that its inside A
+    (e)Yes, because Scope C is inside B
+     */
+
+    //4.
+
+    var x = 9;
+
+    function myFunction() {
+        return x * x;
+    }
+
+    document.write(myFunction()); //# takes value from global x P1=9*9
+    x = 5;
+    document.write(myFunction());//# takes value from overw ritten x P2=5*5
+
+    //Resumed=81,25
+
+  //  5.
+
+    var foo = 1;
+
+    function bar() {
+        if (!foo) {
+            var foo = 10;
+        }
+        alert(foo); 
+    }
+
+    bar();
+    //Resumed= 10
+
+  //  6.
+
+    let count = {
+        counter: 0,
+        add: function () {
+            this.counter += 1;
+            return this.counter;
+            console.log("reset=" + this.counter);
+        }
+        ,
+        reset: function () {
+            this.counter = 0;
+            return this.counter;
+        }
+    };
+/*
+    let count = (function () {
+        let counter = 0;
+        return {
+            add: function () {
+                return counter += 1;
+            },
+            reset: function () {
+                return counter = 0;
+            }
+        }
+    });
+*/
+
+   // 7.
+    /*Is the variable that is not passed as a parameter and also that is note declared locally in the scope
+    in this case the free variable is counter */
+
+    // 8.
+
+/*
+    let make_adder = (function (inc) {
+        let counter = 0;
+        return function add() {
+            return counter += inc;
+        }
+    });
+
+  */
+
+ //   9.
+/*
+        (function () {
+            // putting everthing here
+        })();
+    or
+    here
+    { // putting everthing here
+    }
+    or
+    const oldmodule = {
+    // putting everthing here separated with "," }
+ */
+
+
+    /* 10. Using the Revealing Module Pattern, write a Javascript definition of a Module that creates an Employee Object
+    with the following fields and methods:*/
+
+    let employee = (function () {
+        //private fields
+        let name;
+        let age;
+        let salary;
+
+        let setAge = function (ageIn) {//public
+            age = ageIn;
+        };
+
+        let setSalary = function (salaryIn) {//public
+            salary = salaryIn;
+        };
+
+        let setName = function (nameIn) {//public
+            name = nameIn;
+        };
+
+        let getAge = function () {//private
+            return age;
+        };
+
+        let getSalary = function () {//private
+            return salary;
+        };
+
+        let getName = function () {//private
+            return name;
+        };
+
+        let increaseSalary = function (inc) {//public
+            salary = getSalary() + inc;
+            return salary;
+        };
+
+        let incrementAge = function () {//public
+            age = getAge() + 1;
+            return age;
+        };
+
+        return {
+            publicSetName: setName,
+            publicSetAge: setAge,
+            publicSetSalary: setSalary,
+            publicIncreaseSalary: increaseSalary,
+            publicIncrementAge: incrementAge
+        };
+    })();
+
+    let e1 = employee;
+    e1.publicSetName("Jeison");
+    e1.publicSetAge(25);
+    e1.publicSetSalary(500);
+    console.log(e1.publicIncrementAge());
+
+
+   // 11. Rewrite your answer to Question 10 using the Locally Scoped Object Literal Pattern.*/
+
+
+    let e1 = employee;
+    e1.publicSetName("Jeison");
+    e1.publicSetAge(25);
+    e1.publicSetSalary(500);
+    console.log(e1.publicIncrementAge());
+
+
+
+</script>
+
+</body>
+</html>
+
