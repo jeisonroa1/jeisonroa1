@@ -1,8 +1,4 @@
 "use strict";
-/* global describe */
-/* global it */
-/* global assert */
-/* global pow */
 
 describe("sum", function () {
 
@@ -28,8 +24,8 @@ describe("sum", function () {
 });
 
 describe("multiply", function () {
-    describe("Multiply all the elements in the array [1,1,3,3] ", function () {
-        let testArray = [1, 1, 3, 3];
+    describe("Multiply all the elements in the array [2,1,5,3] ", function () {
+        let testArray = [2, 1, 5, 3];
         let expected = 1;
         for (let x = 0; x < testArray.length; x++) {
             expected *= testArray[x];
@@ -49,9 +45,9 @@ describe("multiply", function () {
 });
 
 describe("reverse", function () {
-    describe("Reverse of the String: hola amigos ", function () {
-        let testStr = "hola amigos";
-        let expected = "sogima aloh";
+    describe("Reverse of the String: Hello Friends", function () {
+        let testStr = "Hello Friends";
+        let expected = "sdneirF olleH";
 
         it(`${testStr} reverse is ${expected}`, function () {
             assert.equal(reverse(testStr), expected);
@@ -69,8 +65,8 @@ describe("reverse", function () {
 
 describe("filterLongWords", function () {
     describe("Filter longer words than 5: [maldita, lisiada, te, besaste, con, mi, nandito] ", function () {
-        let testArray = ["maldita", "lisiada", "te", "besaste", "con", "mi", "nandito"];
-        let expected = ["maldita", "lisiada", "besaste", "nandito"];
+        let testArray = ["holanda", "colombia", "cuba", "estadosunidos", "con", "mi", "rusian"];
+        let expected = ["holanda", "colombia", "estadosunidos", "rusian"];
         let val = 5;
         it(`${testArray} filtering the long words ${expected}`, function () {
             assert.equal(filterLongWords(testArray, val).toString(), expected.toString());
