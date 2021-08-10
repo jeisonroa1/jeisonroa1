@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title> W3D6 </title>
+</head>
+<body>
+
+<!--<div>-->
+<%- include('header')%>
+<p id="title">
+    <span>Product List</span>
+</p>
+<div id="table">
+    <table border="1px solid black" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        <% for(let i=0; i < prods.length; i++) { %>
+            <tr>
+                <td><%= prods[i].name %></td>
+                <td><%= prods[i].price %></td>
+                <td><%= prods[i].description %></td>
+                <form action="/addToCart" method="post">
+                    <input type="hidden" name="id" value="<%= prods[i].id %>"/>
+                    <td><button type="submit">Add to cart</button></td>
+                </form>
+            </tr>
+        <%}%>
+    </table>
+</div>
+<%- include('footer')%>
+<!--    </div>-->
+</body>
+</html>

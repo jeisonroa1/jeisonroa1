@@ -1,0 +1,16 @@
+{
+  "name": "q1",
+  "version": "1.0.0",
+  "description": "Assginment-W4D1-Q1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashok lama",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

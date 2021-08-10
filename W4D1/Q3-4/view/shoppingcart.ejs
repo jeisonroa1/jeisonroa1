@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title> W3D6 </title>
+</head>
+<body>
+
+<!--<div>-->
+<%- include('header')%>
+<p id="title">
+    <span>My Cart</span>
+</p>
+<div id="table">
+    <table border="1px solid black" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>description</th>
+            <th>quantity</th>
+            <th>Action</th>
+        </tr>
+        <% for(let c in cart){%>
+        <% console.log(cart)%>
+            <tr>
+                <td><%= cart[c].name %></td>
+                <td><%= cart[c].price %></td>
+                <td><%= cart[c].description %></td>
+                <td><%= cart[c].quantity %></td>
+                <form action="#">
+                    <input type="hidden" name="id" value="<%= cart[c].id %>"/>
+                    <td><button type="submit">Buy</button></td>
+                </form>
+            </tr>
+        <%}%>
+    </table>
+</div>
+<%- include('footer')%>
+<!--    </div>-->
+</body>
+</html>

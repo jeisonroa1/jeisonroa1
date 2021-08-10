@@ -1,0 +1,41 @@
+th{
+    text-align: left;
+}
+
+#container{
+    width: 700px;
+    margin: auto;
+}
+
+#table{
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#header {
+    height: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#footer {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
